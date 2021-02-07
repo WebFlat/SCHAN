@@ -1,0 +1,70 @@
+<div class="current-task top">
+    <div class="wrapper">
+        <header class="header">
+            <img src="./img/back.svg" alt="icon" class="header__back">
+            <span class="header__title">Текущая задача
+            </span>
+        </header>
+        <div class="current-task__status">
+            <span class="current-task__status-text">
+                В процессе
+            </span>
+        </div>
+        <div class="current-task__data">
+            <div class="tasks__num current-task__num">
+                <span class="tasks__num-title current-task__num-title">Номер заказа:</span><span class="tasks__num-val">№ <span>4322</span></span>
+            </div>
+            <div class="tasks__num current-task__car">
+                <span class="tasks__num-title current-task__car-title">Номер машины:</span><span class="tasks__num-val current-task__car-num">№ <span>H -333 333</span></span>
+            </div>
+        </div>
+        <div class="tasks__loading current-task__form">
+            <p class="tasks__loading-title current-task__arrival">Место загрузки:</p>
+            <p class="tasks__loading-text">309290, обл. Белгородская, г. Шебекино, ряд. 3, гск. Район Глиняного карьера, д. 39</p>
+            <p class="current-task__title">Расстояние (КМ)</p>
+            <input type="numbers" name="distance" class="current-task__inp current-task__distance" placeholder="0" disabled>
+            <p class="current-task__title current-task__title--date">Время прибытия:</p>
+            <div class="current-task__date-wrap">
+                <p class="current-task__inp current-task__date" id="time-arrivalOut"></p>
+                <input type="datetime-local" name="distance" id="time-arrival" class="current-task__inp current-task__inp--hide current-task__date" value="2021-01-01T00:00:00" disabled>
+
+            </div>
+        </div>
+        <div class="current-task__form">
+            <div class="current-task__header">
+                <p class="tasks__unloading-title current-task__unloading">Место выгрузки:</p>
+                <p class="tasks__unloading-text">309290, обл. Белгородская, г. Шебекино, ряд. 3, гск. Район Глиняного карьера, д. 39</p>
+                
+            </div>
+            <p class="current-task__title">Расстояние (КМ)</p>
+            <input type="number" name="distance" class="current-task__inp current-task__distance" placeholder="0">
+            <p class="current-task__title current-task__title--date">Время прибытия:</p>
+            <div class="current-task__date-wrap">
+                <p class="current-task__inp current-task__date" id="time-unloadingOut"></p>
+                <input type="datetime-local" name="distance" class="current-task__inp current-task__date current-task__inp--hide" value="2021-01-01T00:00:00" id="time-unloading">
+            </div>
+        </div>
+        <button class="current-task__save btn btn--save">СОХРАНИТЬ</button>   
+        <div class="tasks__info current-task__info">
+            <img src="./img/info-circle.svg" alt="icon" class="tasks__info-icon">
+            <span class="tasks__info-title">Дополнительная информация:</span>
+            <p class="tasks__info-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее</p>
+        </div>
+        <button class="current-task__end btn">ЗАВЕРШИТЬ ЗАДАЧУ</button>
+    </div>
+</section>
+
+<section class="defstate">
+    <div class="wrapper">
+        <div class="tasks__loading current-task__form">
+            <p class="tasks__loading-title current-task__arrival">Место загрузки:</p>
+                <p class="tasks__loading-text">309290, обл. Белгородская, г. Шебекино, ряд. 3, гск. Район Глиняного карьера, д. 39</p>
+        </div>
+        <button class="btn btn--edit">Заполнить данные маршрута</button>
+        <div class="current-task__header">
+            <p class="tasks__unloading-title current-task__unloading">Место выгрузки:</p>
+            <p class="tasks__unloading-text">309290, обл. Белгородская, г. Шебекино, ряд. 3, гск. Район Глиняного карьера, д. 39</p>
+        </div>
+        <button class="btn btn--edit">Заполнить данные маршрута</button>
+    </div>
+</section>

@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SCHAN</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="shortcut icon" href="favicon.ico">
+	
+	<link rel="stylesheet" href="css/styles.min.css">
+	
+	<meta name="description" content="">
+</head>
+<body>
+
+	<!-- контент страницы -->
+	<section class="block">
+	    <div class="wrapper">
+	        <div class="block__logo-wrap">
+	            <img src="./img/logo.svg" alt="logo" class="block__logo">
+	        </div>
+	        <div class="block__titles">
+	            <p class="block__title">Добро пожаловать!</p>
+	            <p class="block__subtitle">Заполните ваши данные для авторизации</p>
+	        </div>
+	        <form action="" method="" class="block__form">
+	            <div class="block__wrap-input">
+	                <img src="./img/user.svg" alt="icon" class="block__img">
+	                <input type="text" class="block__login input" placeholder="Ваш логин" required>
+	            </div> 
+	            <div class="block__wrap-input">
+	                <img src="./img/lock.svg" alt="icon" class="block__img">
+	                <input type="password" class="block__password input" name="password" required placeholder="Ваш пароль">
+	            </div>
+	            <button type="submit" class="btn">АВТОРИЗИРОВАТЬСЯ</button>
+	        </form>
+	    </div>
+	</section>
+	<section class="block">
+	    <div class="wrapper">
+	        <div class="block__logo-wrap">
+	            <img src="./img/logo.svg" alt="logo" class="block__logo">
+	        </div>
+	        <div class="block__titles">
+	            <p class="block__title">Установите новый пароль</p>
+	            <p class="block__subtitle">Придумайте новый пароль для авторизации</p>
+	        </div>
+	        <form action="" method="" class="block__form">
+	            <div class="block__wrap-input">
+	                <img src="./img/lock.svg" alt="icon" class="block__img">
+	                <input type="password" class="block__login input" placeholder="Введите новый пароль" required>
+	            </div> 
+	            <div class="block__wrap-input">
+	                <img src="./img/lock.svg" alt="icon" class="block__img">
+	                <input type="password" class="block__password input" name="password" required placeholder="Повторите новый пароль">
+	            </div>
+	            <button type="submit" class="btn">АВТОРИЗИРОВАТЬСЯ</button>
+	        </form>
+	    </div>
+	</section>
+	<section class="block">
+	    <div class="wrapper">
+	        <div class="block__logo-wrap">
+	            <img src="../img/logo.svg" alt="logo" class="login__logo">
+	        </div>
+	        <div class="block__titles">
+	            <p class="block__title">Авторизация</p>
+	            <p class="block__subtitle">Введите ваш пароль для авторизации</p>
+	        </div>
+	        <form action="" method="" class="block__form">
+	            <div class="block__wrap-input">
+	                <img src="./img/lock.svg" alt="icon" class="block__img">
+	                <input type="password" class="block__login input" placeholder="Введите ваш пароль" required>
+	            </div>
+	            <button type="submit" class="btn">АВТОРИЗИРОВАТЬСЯ</button>
+	        </form>
+	    </div>
+	</section>
+	<section class="menu top">
+	    <div class="wrapper">
+	        <header class="header">
+	            <span class="header__title">Меню</span>
+	        </header>
+	        <div class="menu__items">
+	            <div class="menu__item">
+	                <img src="./img/coolicon.svg" alt="icon" class="menu__img">
+	                <span class="menu__title">Список задач</span>
+	                <a href="#" class="menu__link"></a>
+	            </div>
+	            <div class="menu__item">
+	                <img src="./img/check.svg" alt="icon" class="menu__img">
+	                <span class="menu__title">Текущая задача</span>
+	                <a href="#" class="menu__link"></a>
+	            </div>
+	            <div class="menu__item">
+	                <img src="./img/list.svg" alt="icon" class="menu__img">
+	                <span class="menu__title">Топливные листы</span>
+	                <a href="#" class="menu__link"></a>
+	            </div>
+	            <div class="menu__item">
+	                <img src="./img/info.svg" alt="icon" class="menu__img">
+	                <span class="menu__title">Важная информация</span>
+	                <a href="#" class="menu__link"></a>
+	            </div>
+	            <div class="menu__item orange">
+	                <img src="./img/notification.svg" alt="icon" class="menu__img">
+	                <span class="menu__title">Уведомления</span>
+	                <a href="#" class="menu__link menu__link--orange"></a>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+	<section class="tasks top">
+	    <div class="wrapper">
+	        <header class="header">
+	            <img src="./img/back.svg" alt="icon" class="header__back">
+	            <span class="header__title">Список задач</span>
+	        </header>
+	        <div class="tasks__items">
+	            <div class="tasks__item">
+	                <div class="tasks__header">
+	                    <div class="tasks__num">
+	                        <span class="tasks__num-title">Номер заказа:</span><span class="tasks__num-val">№ <span>4322</span></span>
+	                    </div>
+	                    <div class="tasks__status">
+	                        <span class="tasks__status-title">Статус заказа:</span><span class="tasks__status-val">В ожидании</span>
+	                    </div>
+	                </div>
+	                <div class="tasks__loading">
+	                    <p class="tasks__loading-title">Место загрузки:</p>
+	                    <p class="tasks__loading-text">309290, обл. Белгородская, г. Шебекино, ряд. 3, гск. Район Глиняного карьера, д. 39</p>
+	                </div>
+	                <div class="tasks__unloading">
+	                    <p class="tasks__unloading-title">Место выгрузки:</p>
+	                    <p class="tasks__unloading-text">309290, обл. Белгородская, г. Шебекино, ряд. 3, гск. Район Глиняного</p>
+	                </div>
+	                <div class="tasks__info">
+	                    <img src="./img/info-circle.svg" alt="icon" class="tasks__info-icon">
+	                    <span class="tasks__info-title">Дополнительная информация:</span>
+	                    <p class="tasks__info-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее</p>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+	<section class="finished top">
+	    <div class="wrapper">
+	        <header class="header">
+	            <img src="./img/back.svg" alt="icon" class="header__back">
+	            <span class="header__title">Текущая задача</span>
+	        </header>
+	        <div class="finished__main">
+	            <img src="./img/done.svg" alt="icons" class="finished__icon">
+	            <p class="finished__title">
+	                Текущая задача завершена!
+	            </p>
+	            <p class="finished__subtitle">
+	                Что бы посмотреть новые задачи, перейдите к пункту “Список задач”
+	            </p>
+	        </div>
+	        <button class="finished__link btn">
+	            ПЕРЕЙТИ К СПИСКУ ЗАДАЧ
+	        </button>
+	    </div>
+	</section>
+	<section class="important-info top">
+	    <div class="wrapper">
+	        <header class="header">
+	            <img src="./img/back.svg" alt="icon" class="header__back">
+	            <span class="header__title">Важная информация</span>
+	        </header>
+	        <div class="info__main">
+	            <div class="info__titles">
+	                <p class="info__title">
+	                    Название темы
+	                </p>
+	                <p class="info__subtitle">
+	                    Какое-то название темварвапа афыв раы безниепвыаптние т содержимого
+	                </p>
+	            </div>
+	            <div class="info__content">
+	                <p class="info__title">
+	                    Описание
+	                </p>
+	                <p class="info__text">
+	                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менееСайт рыбатекст помоКСайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менееСайт рыбатекст поможет дизайнеру, верстальщжет дизайнеру, верстальщ
+	                </p>
+	                <div class="info__details">
+	                    <span class="info__status">Прочитано</span>
+	                    <img src="./img/done-small.svg" alt="icon">
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+	<section class="notification top">
+	    <div class="wrapper">
+	        <header class="header">
+	            <img src="./img/back.svg" alt="icon" class="header__back">
+	            <span class="header__title">Уведомления
+	            </span>
+	        </header>
+	        <div class="info__main">
+	            <div class="info__titles">
+	                <p class="info__title">
+	                    Название темы
+	                </p>
+	                <p class="info__subtitle">
+	                    Какое-то название темварвапа афыв раы безниепвыаптние т содержимого
+	                </p>
+	            </div>
+	            <div class="info__content">
+	                <p class="info__title">
+	                    Описание
+	                </p>
+	                <p class="info__text">
+	                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менееСайт рыбатекст помоКСайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менееСайт рыбатекст поможет дизайнеру, верстальщжет дизайнеру, верстальщ
+	                </p>
+	                <div class="info__details">
+	                    <span class="info__status">Прочитано</span>
+	                    <img src="./img/done-small.svg" alt="icon">
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+	<section class="oil-list top">
+	    <div class="wrapper">
+	        <header class="header">
+	            <img src="./img/back.svg" alt="icon" class="header__back">
+	            <span class="header__title">Топливные листы
+	            </span>
+	            <button class="header__btn">+</button>
+	        </header>
+	        <div class="oil-list__items">
+	            <div class="oil-list__item">
+	                <div class="oil-list__calendar">
+	                    <img src="./img/calendar.svg" alt="icon" class="oil-list__icon">
+	                </div>
+	                <div class="oil-list__data">
+	                    <span class="oil-list__mounth">Январь</span>
+	                    <p class="oil-list__period">
+	                        <span class="oil-list__start">
+	                            01.01.2020
+	                        </span>
+	                        <img src="./img/arrow-white.svg" alt="icon">
+	                        <span class="oil-list__end">
+	                            31.01.2020
+	                        </span>
+	                    </p>
+	                </div>
+	                <img class="oil-list__link" src="./img/arrow.svg" alt="icon">
+	            </div>
+	            <div class="oil-list__item">
+	                <div class="oil-list__calendar">
+	                    <img src="./img/calendar.svg" alt="icon" class="oil-list__icon">
+	                </div>
+	                <div class="oil-list__data">
+	                    <span class="oil-list__mounth">Январь</span>
+	                    <p class="oil-list__period">
+	                        <span class="oil-list__start">
+	                            01.01.2020
+	                        </span>
+	                        <img src="./img/arrow-white.svg" alt="icon">
+	                        <span class="oil-list__end">
+	                            31.01.2020
+	                        </span>
+	                    </p>
+	                </div>
+	                <img class="oil-list__link" src="./img/arrow.svg" alt="icon">
+	            </div>
+	            <div class="oil-list__item">
+	                <div class="oil-list__calendar">
+	                    <img src="./img/calendar.svg" alt="icon" class="oil-list__icon">
+	                </div>
+	                <div class="oil-list__data">
+	                    <span class="oil-list__mounth">Январь</span>
+	                    <p class="oil-list__period">
+	                        <span class="oil-list__start">
+	                            01.01.2020
+	                        </span>
+	                        <img src="./img/arrow-white.svg" alt="icon">
+	                        <span class="oil-list__end">
+	                            31.01.2020
+	                        </span>
+	                    </p>
+	                </div>
+	                <img class="oil-list__link" src="./img/arrow.svg" alt="icon">
+	            </div>
+	        </div>
+	    </div>
+	</section>
+	<div class="current-task top">
+	    <div class="wrapper">
+	        <header class="header">
+	            <img src="./img/back.svg" alt="icon" class="header__back">
+	            <span class="header__title">Текущая задача
+	            </span>
+	        </header>
+	        <div class="current-task__status">
+	            <span class="current-task__status-text">
+	                В процессе
+	            </span>
+	        </div>
+	        <div class="current-task__data">
+	            <div class="tasks__num current-task__num">
+	                <span class="tasks__num-title current-task__num-title">Номер заказа:</span><span class="tasks__num-val">№ <span>4322</span></span>
+	            </div>
+	            <div class="tasks__num current-task__car">
+	                <span class="tasks__num-title current-task__car-title">Номер машины:</span><span class="tasks__num-val current-task__car-num">№ <span>H -333 333</span></span>
+	            </div>
+	        </div>
+	        <div class="tasks__loading current-task__form">
+	            <p class="tasks__loading-title current-task__arrival">Место загрузки:</p>
+	            <p class="tasks__loading-text">309290, обл. Белгородская, г. Шебекино, ряд. 3, гск. Район Глиняного карьера, д. 39</p>
+	            <p class="current-task__title">Расстояние (КМ)</p>
+	            <input type="numbers" name="distance" class="current-task__inp current-task__distance" placeholder="0" disabled>
+	            <p class="current-task__title current-task__title--date">Время прибытия:</p>
+	            <div class="current-task__date-wrap">
+	                <p class="current-task__inp current-task__date" id="time-arrivalOut"></p>
+	                <input type="datetime-local" name="distance" id="time-arrival" class="current-task__inp current-task__inp--hide current-task__date" value="2021-01-01T00:00:00" disabled>
+	
+	            </div>
+	        </div>
+	        <div class="current-task__form">
+	            <div class="current-task__header">
+	                <p class="tasks__unloading-title current-task__unloading">Место выгрузки:</p>
+	                <p class="tasks__unloading-text">309290, обл. Белгородская, г. Шебекино, ряд. 3, гск. Район Глиняного карьера, д. 39</p>
+	                
+	            </div>
+	            <p class="current-task__title">Расстояние (КМ)</p>
+	            <input type="number" name="distance" class="current-task__inp current-task__distance" placeholder="0">
+	            <p class="current-task__title current-task__title--date">Время прибытия:</p>
+	            <div class="current-task__date-wrap">
+	                <p class="current-task__inp current-task__date" id="time-unloadingOut"></p>
+	                <input type="datetime-local" name="distance" class="current-task__inp current-task__date current-task__inp--hide" value="2021-01-01T00:00:00" id="time-unloading">
+	            </div>
+	        </div>
+	        <button class="current-task__save btn btn--save">СОХРАНИТЬ</button>   
+	        <div class="tasks__info current-task__info">
+	            <img src="./img/info-circle.svg" alt="icon" class="tasks__info-icon">
+	            <span class="tasks__info-title">Дополнительная информация:</span>
+	            <p class="tasks__info-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее</p>
+	        </div>
+	        <button class="current-task__end btn">ЗАВЕРШИТЬ ЗАДАЧУ</button>
+	    </div>
+	</section>
+	
+	<section class="defstate">
+	    <div class="wrapper">
+	        <div class="tasks__loading current-task__form">
+	            <p class="tasks__loading-title current-task__arrival">Место загрузки:</p>
+	                <p class="tasks__loading-text">309290, обл. Белгородская, г. Шебекино, ряд. 3, гск. Район Глиняного карьера, д. 39</p>
+	        </div>
+	        <button class="btn btn--edit">Заполнить данные маршрута</button>
+	        <div class="current-task__header">
+	            <p class="tasks__unloading-title current-task__unloading">Место выгрузки:</p>
+	            <p class="tasks__unloading-text">309290, обл. Белгородская, г. Шебекино, ряд. 3, гск. Район Глиняного карьера, д. 39</p>
+	        </div>
+	        <button class="btn btn--edit">Заполнить данные маршрута</button>
+	    </div>
+	</section>
+	<section class="oil-list-new top">
+	    <div class="wrapper">
+	        <header class="header">
+	            <img src="./img/back.svg" alt="icon" class="header__back">
+	            <span class="header__title">Новый топливный лист
+	            </span>
+	        </header>
+	        <div class="oil-list-new__wrap">
+	            <div class="oil-list-new__items">
+	                <label for="car" class="oil-list-new__label">
+	                    Выбор машины
+	                </label>
+	                <select type="text" name="car" class="oil-list-new__inp">
+	                    <option selected disabled>H -XXX XXX</option>
+	                    <option value="H -333 333">H -333 333</option>
+	                    <option value="H -333 333">H -333 333</option>
+	                    <option value="H -333 333">H -333 333</option>
+	                    <option value="H -333 333">H -333 333</option>
+	                </select>
+	                <img src="./img/wheel.svg" alt="icon" class="oil-list-new__icon">
+	            </div>
+	            <div class="oil-list-new__items">
+	                <label for="distance-start" class="oil-list-new__label">
+	                    Пробег <span>(начала)</span> 
+	                </label>
+	                <input type="number"  name="distance-start" class="oil-list-new__inp" placeholder="0">
+	                <img src="./img/speed.svg" alt="icon" class="oil-list-new__icon">
+	            </div>
+	            <div class="oil-list-new__items">
+	                <label for="distance-end" class="oil-list-new__label">
+	                    Пробег <span>(окончание)</span>
+	                </label>
+	                <input name="distance-end" class="oil-list-new__inp" type="number" placeholder="0">
+	                <img src="./img/speed-and.svg" alt="icon" class="oil-list-new__icon">
+	            </div>
+	            <div class="oil-list-new__items">
+	                <label for="date-start" class="oil-list-new__label">
+	                    Дата <span>(начало)</span>
+	                </label>
+	                <span class="oil-list-new__inp"></span>
+	                <input type="date" name="date-start" class="oil-list-new__inp">
+	                <img src="/img/calendar.svg" alt="icon" class="oil-list-new__icon">
+	            </div>
+	            <div class="oil-list-new__items">
+	                <label for="date-end" class="oil-list-new__label">
+	                    Дата <span>(окончание)</span>
+	                </label>
+	                <input type="date" name="date-end" class="oil-list-new__inp">
+	                <img src="./img/calendar.svg" alt="icon" class="oil-list-new__icon">
+	            </div>
+	            <button class="btn">СОЗДАТЬ ТОПЛИВНЫЙ ЛИСТ</button>
+	        </div>
+	    </div>
+	</section>
+	<section class="oil-list-history top">
+	    <div class="wrapper">
+	        <header class="header">
+	            <img src="./img/back.svg" alt="icon" class="header__back">
+	            <span class="header__title">Топливные листы
+	            </span>
+	        </header>
+	        <form class="oil-list-new__wrap">
+	            <div class="oil-list-new__items">
+	                <label for="date" class="oil-list-new__label">
+	                    Дата
+	                </label>
+	                <span class="oil-list-new__inp"></span>
+	                <input type="date" name="date" class="oil-list-new__inp">
+	                <img src="/img/calendar.svg" alt="icon" class="oil-list-new__icon">
+	            </div>
+	            <div class="oil-list-new__items">
+	                <label for="litres" class="oil-list-new__label">
+	                    Литры 
+	                </label>
+	                <input type="number"  name="litres" class="oil-list-new__inp" placeholder="0">
+	                <img src="./img/crude.svg" alt="icon" class="oil-list-new__icon">
+	            </div>
+	            <div class="oil-list-new__items">
+	                <label for="price" class="oil-list-new__label">
+	                    Цена
+	                </label>
+	                <input name="price" class="oil-list-new__inp" type="number" placeholder="0">
+	                <img src="./img/wallet.svg" alt="icon" class="oil-list-new__icon">
+	            </div>
+	            <button class="btn">СОХРАНИТЬ</button>
+	        </form>
+	        <div class="oil-list-history__wrap">
+	            <p class="oil-list-history__title">
+	                История
+	            </p>
+	            <div class="oil-list-history__items">
+	                <div class="oil-list-history__item">
+	                    <div class="oil-list-history__column">
+	                        <span class="oil-list-history__item-title">Дата</span>
+	                        <span class="oil-list-history__item-val">28.01.2021</span>
+	                    </div>
+	                    <div class="oil-list-history__column">
+	                        <span class="oil-list-history__item-title">Литры</span>
+	                        <span class="oil-list-history__item-val">25</span>
+	                    </div>
+	                    <div class="oil-list-history__column">
+	                        <span class="oil-list-history__item-title">Цена</span>
+	                        <span class="oil-list-history__item-val">1 175 <span>₽</span></span>
+	                    </div>
+	                </div>
+	                <div class="oil-list-history__item">
+	                    <div class="oil-list-history__column">
+	                        <span class="oil-list-history__item-title">Дата</span>
+	                        <span class="oil-list-history__item-val">28.01.2021</span>
+	                    </div>
+	                    <div class="oil-list-history__column">
+	                        <span class="oil-list-history__item-title">Литры</span>
+	                        <span class="oil-list-history__item-val">25</span>
+	                    </div>
+	                    <div class="oil-list-history__column">
+	                        <span class="oil-list-history__item-title">Цена</span>
+	                        <span class="oil-list-history__item-val">1 175 <span>₽</span></span>
+	                    </div>
+	                </div>
+	                <div class="oil-list-history__item">
+	                    <div class="oil-list-history__column">
+	                        <span class="oil-list-history__item-title">Дата</span>
+	                        <span class="oil-list-history__item-val">28.01.2021</span>
+	                    </div>
+	                    <div class="oil-list-history__column">
+	                        <span class="oil-list-history__item-title">Литры</span>
+	                        <span class="oil-list-history__item-val">25</span>
+	                    </div>
+	                    <div class="oil-list-history__column">
+	                        <span class="oil-list-history__item-title">Цена</span>
+	                        <span class="oil-list-history__item-val">1 175 <span>₽</span></span>
+	                    </div>
+	                </div>
+	                <div class="oil-list-history__item">
+	                    <div class="oil-list-history__column">
+	                        <span class="oil-list-history__item-title">Дата</span>
+	                        <span class="oil-list-history__item-val">28.01.2021</span>
+	                    </div>
+	                    <div class="oil-list-history__column">
+	                        <span class="oil-list-history__item-title">Литры</span>
+	                        <span class="oil-list-history__item-val">25</span>
+	                    </div>
+	                    <div class="oil-list-history__column">
+	                        <span class="oil-list-history__item-title">Цена</span>
+	                        <span class="oil-list-history__item-val">1 175 <span>₽</span></span>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+	<section class="important-info-def top">
+	    <div class="wrapper">
+	        <header class="header">
+	            <img src="./img/back.svg" alt="icon" class="header__back">
+	            <span class="header__title">Важная информация
+	            </span>
+	        </header>
+	        <div class="important-info-def__items">
+	            <div class="important-info-def__item">
+	                <div class="important-info-def__content">
+	                    <span class="important-info-def__title">
+	                        28 Января, 18:44
+	                    </span>
+	                    <p class="important-info-def__text">
+	                        Какое-то название темварвапраы безниетние т содержимого
+	                    </p>
+	                    <div class="important-info-def__status">
+	                        <span class="important-info-def__info done">
+	                            Прочитано
+	                        </span>
+	                        <img src="./img/done-small.svg" alt="icon">
+	                    </div>
+	                </div>
+	                <button class="important-info-def__link done">
+	                    <img src="./img/arrow-black.svg" alt="icon">
+	                </button>
+	            </div>
+	            <div class="important-info-def__item">
+	                <div class="important-info-def__content">
+	                    <span class="important-info-def__title">
+	                        28 Января, 18:44
+	                    </span>
+	                    <p class="important-info-def__text">
+	                        Какое-то название темварвапраы безниетние т содержимого
+	                    </p>
+	                    <div class="important-info-def__status">
+	                        <span class="important-info-def__info inProgress">
+	                            Не прочитано
+	                        </span>
+	                        <img src="./img/done-inprogres.svg" alt="icon">
+	                    </div>
+	                </div>
+	                <button class="important-info-def__link inProgress">
+	                    <img src="./img/arrow-black.svg" alt="icon">
+	                </button>
+	            </div>
+	            <div class="important-info-def__item">
+	                <div class="important-info-def__content">
+	                    <span class="important-info-def__title">
+	                        28 Января, 18:44
+	                    </span>
+	                    <p class="important-info-def__text">
+	                        Какое-то название темварвапраы безниетние т содержимого
+	                    </p>
+	                    <div class="important-info-def__status">
+	                        <span class="important-info-def__info done">
+	                            Прочитано
+	                        </span>
+	                        <img src="./img/done-small.svg" alt="icon">
+	                    </div>
+	                </div>
+	                <button class="important-info-def__link done">
+	                    <img src="./img/arrow-black.svg" alt="icon">
+	                </button>
+	            </div>
+	            <div class="important-info-def__item">
+	                <div class="important-info-def__content">
+	                    <span class="important-info-def__title">
+	                        28 Января, 18:44
+	                    </span>
+	                    <p class="important-info-def__text">
+	                        Какое-то название темварвапраы безниетние т содержимого
+	                    </p>
+	                    <div class="important-info-def__status">
+	                        <span class="important-info-def__info inProgress">
+	                            Не прочитано
+	                        </span>
+	                        <img src="./img/done-inprogres.svg" alt="icon">
+	                    </div>
+	                </div>
+	                <button class="important-info-def__link inProgress">
+	                    <img src="./img/arrow-black.svg" alt="icon">
+	                </button>
+	            </div>
+	        </div>
+	    </div>
+	    
+	</section>
+	<section class="notification-def top">
+	    <div class="wrapper">
+	        <header class="header">
+	            <img src="./img/back.svg" alt="icon" class="header__back">
+	            <span class="header__title">Важная информация
+	            </span>
+	        </header>
+	        <div class="notification-def__wrap">
+	            <p class="notification-def__title">
+	                Ваши уведомления (
+	                <span class="notification-def__val">
+	                    3
+	                </span>)
+	            </p>
+	            <span class="notification-def__subtitle">
+	                Список прочитанных уведомлений
+	            </span> 
+	        </div>
+	        <div class="important-info-def__items">
+	            <div class="important-info-def__item">
+	                <div class="important-info-def__content">
+	                    <span class="important-info-def__title">
+	                        28 Января, 18:44
+	                    </span>
+	                    <p class="important-info-def__text notification-def__text">
+	                        Пришло уведомление что бпПришло уведомление что бы п...
+	                    </p>
+	                    <div class="important-info-def__status">
+	                        <span class="important-info-def__info done">
+	                            Прочитано
+	                        </span>
+	                        <img src="./img/done-small.svg" alt="icon">
+	                    </div>
+	                </div>
+	                <button class="important-info-def__link done">
+	                    <img src="./img/arrow-black.svg" alt="icon">
+	                </button>
+	            </div>
+	            <div class="important-info-def__item">
+	                <div class="important-info-def__content">
+	                    <span class="important-info-def__title">
+	                        28 Января, 18:44
+	                    </span>
+	                    <p class="important-info-def__text notification-def__text">
+	                        Пришло уведомление что бы п...Пришло уведомление что бы п...
+	                    </p>
+	                    <div class="important-info-def__status">
+	                        <span class="important-info-def__info inProgress">
+	                            Не прочитано
+	                        </span>
+	                        <img src="./img/done-inprogres.svg" alt="icon">
+	                    </div>
+	                </div>
+	                <button class="important-info-def__link inProgress">
+	                    <img src="./img/arrow-black.svg" alt="icon">
+	                </button>
+	            </div>
+	            <div class="important-info-def__item">
+	                <div class="important-info-def__content">
+	                    <span class="important-info-def__title">
+	                        28 Января, 18:44
+	                    </span>
+	                    <p class="important-info-def__text notification-def__text">
+	                        Пришло уведомление что бы п...Пришло уведомление что бы п...
+	                    </p>
+	                    <div class="important-info-def__status">
+	                        <span class="important-info-def__info done">
+	                            Прочитано
+	                        </span>
+	                        <img src="./img/done-small.svg" alt="icon">
+	                    </div>
+	                </div>
+	                <button class="important-info-def__link done">
+	                    <img src="./img/arrow-black.svg" alt="icon">
+	                </button>
+	            </div>
+	            <div class="important-info-def__item">
+	                <div class="important-info-def__content">
+	                    <span class="important-info-def__title">
+	                        28 Января, 18:44
+	                    </span>
+	                    <p class="important-info-def__text notification-def__text">
+	                        Пришло уведомление что бы п...Пришло уведомление что бы п...
+	                    </p>
+	                    <div class="important-info-def__status">
+	                        <span class="important-info-def__info inProgress">
+	                            Не прочитано
+	                        </span>
+	                        <img src="./img/done-inprogres.svg" alt="icon">
+	                    </div>
+	                </div>
+	                <button class="important-info-def__link inProgress">
+	                    <img src="./img/arrow-black.svg" alt="icon">
+	                </button>
+	            </div>
+	        </div>
+	    </div>
+	    
+	</section>
+
+	<!-- скрипты -->
+	<script src="js/main.min.js"></script>
+
+</body>
+</html>

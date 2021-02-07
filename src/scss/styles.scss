@@ -1,0 +1,776 @@
+@import 'normalize';
+@import 'mixins';
+@import 'slick-theme';
+@import 'slick';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Ubuntu:wght@100;300;400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+$default-color: #ffffff;
+$primary-color: #000000;
+$secondary-color: #7A93A4;
+$background: #131E25;
+$background-grey: #1F2C35;
+$background-darkGrey: #242634;
+$green-color: #00BEAF;
+$text-gray: #7A93A4;
+$yellow-color: #A6E850;
+$orange-color: #E8AA3B;
+$border-input: #474A64;
+$border-input-light: #1F2C35;
+
+
+
+
+
+body {
+	position: relative;
+	min-height: 100%;
+	background: $background;
+	color: $default-color;
+	font-size: 1.6rem;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+//Helpers*******************************************
+.wrapper {
+	max-width: 500px;
+	width: 92%;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+
+.btn {
+	height: 60px;
+	width: 100%;
+	border: none;
+	background: $background-grey;
+	border-radius: 5px;
+	background: $green-color;
+	color: $default-color;
+	text-align: center;
+	display: block;
+	font-size: 1.6rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	&--save {
+		background: transparent;
+		border: 1px solid $yellow-color;
+		color: $yellow-color;
+	}
+	&--edit {
+		margin: 10px 0;
+		background: $yellow-color;
+		color: $primary-color;
+		font-size: 1.4rem;
+		height: 43px;
+	}
+}
+
+.header {
+	height: 84px;
+	text-align: center;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 530px;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 100;
+	background: $background;
+	&::after {
+		content: '';
+		display: block;
+		width: 92%;
+		height: 1px;
+		position: absolute;
+		bottom: 0;
+		background: $background-grey;
+	}
+	&__title {
+		font-size: 2.4rem;
+		color: $yellow-color;
+		font-weight: 400;
+	}
+	&__back {
+		width: 10px;
+		height: 17px;
+		position: absolute;
+		left: 20px;
+	}
+	&__btn {
+		background: $green-color;
+		border: none;
+		border-radius: 5px;
+		width: 38px;
+		height: 38px;
+		color: $default-color;
+		position: absolute;
+		right: 15px;
+	}
+}
+.top {
+	padding-top: 84px;
+}
+
+
+
+
+
+
+
+
+
+
+//Form section******************************************
+.block {
+	padding-top: 140px;
+	&__logo {
+		max-width: 267px;
+	}
+	&__titles {
+		margin-top: 62px;
+	}
+	&__title {
+		font-size: 2rem;
+		line-height: 2.4rem;
+		font-weight: 600;
+	}
+	&__subtitle {
+		line-height: 1.7rem;
+		margin-top: 8px;
+		opacity: .7;
+		font-size: 1.4rem;
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		margin-top: 32px;
+	}
+	&__login,
+	&__password {
+		width: 100%;
+		color: $default-color;
+		&::placeholder {
+			color: $text-gray;
+		}
+	}
+	&__img {
+		width: 15px;
+		height: auto;
+		position: absolute;
+		top: 30px;
+		left: 18px;
+		transform: translateY(-50%);
+	}
+	&__wrap-input {
+		position: relative;
+	}
+}
+.input {
+	padding: 0 0 0 45px;
+	height: 60px;
+	border: none;
+	background: $background-grey;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	font-size: 1.4rem;
+}
+@media screen and (max-height: 670px) {
+	.block {
+		padding-top: 50px;
+	}
+}
+
+
+
+
+//menu***********************************************
+.menu {
+	&__items {
+		margin-top: 27px;
+	}
+	&__item {
+		height: 75px;
+		display: flex;
+		align-items: center;
+		padding: 0 17px;
+		font-size: 2rem;
+		font-weight: 300;
+		background: $background-grey;
+		margin-bottom: 10px;
+		border-radius: 5px;
+		position: relative;
+		&.orange {
+			background: $orange-color;
+			color: $primary-color;
+		}
+	}
+	&__title {
+		margin-left: 12px;
+	}
+	&__link {
+		width: 25px;
+		height: 10px;
+		background: url('../../img/arrow.svg') no-repeat;
+		position: absolute;
+		right: 17px;
+		&--orange {
+			background: url('../../img/arrow-black.svg') no-repeat;
+		}
+	}
+}
+
+
+
+
+//tasks***************************************
+.tasks {
+	position: relative;
+	&__item {
+		margin-top: 20px;
+		border-radius: 5px;
+		overflow: hidden;
+		text-align: left;
+	}
+	&__header {
+		height: 84px;
+		background: $background-grey;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 20px;
+		line-height: 19px;
+	}
+	&__num,
+	&__status {
+		display: flex;
+		flex-direction: column;
+	}
+	&__num-title,
+	&__status-title {
+		color: $text-gray;
+		margin-bottom: 6px;
+	}
+	&__status-val {
+		color: $orange-color;
+	}
+	&__num-val {
+		span {
+			color: $yellow-color;
+		}
+	}
+	&__loading,
+	&__unloading {
+		padding: 20px;
+		background: $background-darkGrey;
+	}
+	&__loading {
+		border-bottom: 1px solid $border-input;
+	}
+	&__loading-title {
+		color: $orange-color;
+	}
+	&__unloading-title {
+		color: $yellow-color;
+	}
+	&__loading-text,
+	&__unloading-text,
+	&__info-text {
+		line-height: 24px;
+		margin-top: 8px;
+	} 
+	&__info {
+		background: $background-grey;
+		padding: 20px;
+		position: relative;
+	}
+	&__info-icon {
+		position: absolute;
+		right: 20px;
+	}
+	&__info-title {
+		color: $text-gray;
+	} 
+}
+
+
+
+//finished block***********************************
+.finished {
+	position: relative;
+	&__main {
+		margin-top: 150px;
+	}
+	&__icon {
+		width: 112px;
+		height: 112px;
+	}
+	&__title {
+		font-weight: 600;
+		font-size: 2.4rem;
+		line-height: 29px;
+		margin-top: 17px;
+	}
+	&__subtitle {
+		line-height: 2.4rem;
+		color: $text-gray;
+		margin-top: 10px;
+	}
+	&__link {
+		margin-top: 210px;
+	}
+}
+@media screen and (max-height: 700px) {
+	.finished {
+		&__main {
+			margin-top: 110px;
+		}
+		&__link {
+			margin-top: 110px;
+		}
+	}
+}
+
+
+
+
+//info sections************************************
+.info {
+	position: relative;
+	&__main {
+		margin-top: 27px;
+		text-align: left;
+	}
+	&__titles,
+	&__content {
+		padding: 20px;
+		background: $background-grey;
+		border-radius: 5px;
+		margin-bottom: 10px;
+	}
+	&__title {
+		color: $text-gray;
+	}
+	&__subtitle,
+	&__text {
+		margin-top: 8px;
+		color: $orange-color;
+		line-height: 24px;
+	}
+	&__text {
+		color: $default-color;
+	}
+	&__status {
+		color: $text-gray;
+		margin-right: 10px;
+	}
+	&__details {
+		display: flex;
+		align-items: center;
+		margin-top: 18px;
+	}
+}
+
+
+
+
+//oil-list**************************************
+.oil-list {
+	position: relative;
+	&__items {
+		margin-top: 29px;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		padding: 16px;
+		background: $background-grey;
+		border-radius: 5px;
+		position: relative;
+		margin-bottom: 10px;
+	}
+	&__data {
+		text-align: left;
+		margin-left: 20px;
+	}
+	&__mounth {
+		font-size: 1.8rem;
+		line-height: 2.2rem;
+	}
+	&__period {
+		margin-top: 5px;
+		font-size: 1.4rem;
+		color: $text-gray;
+		display: flex;
+		align-items: center;
+		img {
+			margin: 0 10px;
+		}
+	}
+	&__link {
+		position: absolute;
+		right: 16px;
+	}
+}
+
+
+
+//oil-list-new***********************************
+.oil-list-new {
+	position: relative;
+	&__wrap {
+		margin-top: 27px;
+	}
+	&__items {
+		position: relative;
+		text-align: left;
+		label {
+			display: block;
+			color: $text-gray;
+			span {
+				color: $yellow-color;
+			}
+		}
+		&::before {
+			content: '';
+			width: 20px;
+			height: 20px;
+			display: block;
+			position: absolute;
+			background: $background;
+			right: 2px;
+			top: 55%;
+			transform: translateY(-50%);
+		}
+		&:last-of-type {
+			margin-bottom: 15px;
+		}
+	}
+	&__inp {
+		min-height: 45px;
+		background: transparent;
+		width: 100%;
+		border: none;
+		border-bottom: 1px solid $border-input-light;
+		padding: 10px 0;
+		line-height: 2.4rem;
+		margin-bottom: 17px;
+		color: $default-color;
+		margin-top: 14px;
+	}
+	&__icon {
+		width: 20px;
+		height: auto;
+		position: absolute;
+		right: -2px;
+		top: 55%;
+		transform: translateY(-50%);
+	}
+}
+
+
+//oil-list-history*****************************
+.oil-list-history {
+	position: relative;
+	padding-bottom: 20px;
+	&__wrap {
+		padding-top: 25px;
+		border-top: 1px solid $border-input-light;
+		margin-top: 30px;
+		text-align: left;
+	}
+	&__title {
+		font-size: 2.2rem;
+		font-weight: 600;
+		line-height: 2.6rem;
+	}
+	&__items {
+		margin-top: 25px;
+	}
+	&__item {
+		display: flex;
+		padding: 20px;
+		background: $background-darkGrey;
+		border-radius: 5px;
+		justify-content: space-between;
+		margin-bottom: 10px;
+	}
+	&__column {
+		display: flex;
+		flex-direction: column;
+	}
+	&__item-title {
+		line-height: 1.9rem;
+		color: $text-gray
+	}
+	&__item-val {
+		margin-top: 7px;
+		line-height: 2.4rem;
+	} 
+}
+
+
+
+//important-info-def****************************
+.important-info-def {
+	position: relative;
+	&__items {
+		padding-top: 7px;
+	}
+	&__item {
+		margin-top: 20px;
+		background: $background-grey;
+		border-radius: 5px;
+		display: flex;
+		margin-bottom: 40px;
+		position: relative;
+		&::after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 1px;
+			background: $border-input-light;
+			position: absolute;
+			bottom: -20px;
+		}
+	}
+	&__content {
+		text-align: left;
+		padding: 20px 0 20px 20px;
+		
+	}
+	&__link {
+		border: none;
+		border-radius: 5px;
+		display: block;
+		min-width: 52px;
+		img {
+			width: 17px;
+			height: 7px;
+		}
+		&.done {
+			background: $green-color;
+		}
+		&.inProgress {
+			background: $orange-color;
+		}
+	}
+	&__title {
+		line-height: 1.9rem;
+		color: $text-gray;
+	}
+	&__text {
+		line-height: 2.4rem;
+		margin-top: 8px;
+		font-weight: 400;
+	}
+	&__status {
+		font-size: 1.4rem;
+		margin-top: 17px;
+		display: flex;
+		align-items: center;
+		img {
+			margin-left: 10px;
+		}
+	}
+	&__info {
+		&.done {
+			color: $green-color;
+		}
+		&.inProgress {
+			color: $orange-color;
+		}
+	}
+}
+
+
+//notification-def*****************************
+.notification-def {
+	&__title {
+		font-size: 2.2rem;
+		line-height: 2.6rem;
+		
+	}
+	&__val {
+		color: $orange-color;
+	}
+	&__subtitle {
+		color: $text-gray;
+		line-height: 1.9rem;
+		margin-top: 7px;
+		display: block;
+	}
+	&__wrap {
+		text-align: left;
+		margin-top: 25px;
+	}
+	&__text {
+		max-height: 24px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
+
+//current-task***********************************
+.current-task {
+	position: relative;
+	padding-bottom: 30px;
+	&__status {
+		margin-top: 27px;
+		padding: 13px;
+		background: $orange-color;
+		border-radius: 5px;
+		color: $primary-color;
+		font-weight: 500;
+	}
+	&__data {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 10px;
+	}
+	&__num,
+	&__car {
+		padding: 20px;
+		width: 47%;
+		border: 1px solid $background-grey;
+		border-radius: 5px;
+		text-align: left;
+	}
+	&__info {
+		border-radius: 5px;
+		margin: 15px 0;
+		text-align: left;
+	}
+	&__form {
+		text-align: left;
+		margin-top: 10px;
+		border-radius: 5px;
+		overflow: hidden;
+		padding-bottom: 25px;
+	}
+	&__end,
+	&__title {
+		position: relative;
+		&::after {
+			content: '';
+			display: block;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			background: url(../../img/camera.svg) no-repeat;
+			right: 23px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	&__header {
+		background: $background-darkGrey;
+		padding: 15px;
+		border-radius: 5px;
+		text-align: left;
+	}
+	&__title {
+		margin-top: 15px;
+		color: $text-gray;
+		&::after {
+			top: 36px;
+			background: url(../../img/distance.svg) no-repeat;
+			right: 0;
+		}
+		&--date {
+			&::after {
+				background: url(../../img/clock.svg) no-repeat;
+			}
+		}
+	}
+	&__inp {
+		min-height: 45px;
+		width: 100%;
+		background: transparent;
+		border: none;
+		border-bottom: 1px solid $border-input;
+		color: $default-color;
+		&::placeholder {
+			color: $default-color;
+		}
+		&--hide {
+			opacity: 0;
+			top: -2px;
+			position: absolute;
+			z-index: 5;
+		}
+	}
+	&__date-wrap {
+		position: relative;
+	}
+	&__distance,
+	&__date {
+		line-height: 2.4rem;
+		padding: 9px 0;
+	}
+	&__unloading,
+	&__arrival {
+		position: relative;
+		&::before {
+			content: '';
+			display: block;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			background: url(../../img/sub_right.svg) no-repeat;
+			right: 0;
+			top: 10%;
+		}
+	}
+	&__arrival {
+		position: relative;
+		&::before {
+			background: url(../../img/sub_left.svg) no-repeat;
+		}
+	}
+
+}
+@media screen and (max-width: 360px) {
+	.current-task {
+		&__car-title,
+		&__num-title {
+			font-size: 1.4rem;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
