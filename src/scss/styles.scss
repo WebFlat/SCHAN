@@ -462,7 +462,7 @@ body {
 			display: block;
 			position: absolute;
 			background: $background;
-			right: 2px;
+			right: 0;
 			top: 55%;
 			transform: translateY(-50%);
 		}
@@ -486,7 +486,7 @@ body {
 		width: 20px;
 		height: auto;
 		position: absolute;
-		right: -2px;
+		right: 0;
 		top: 55%;
 		transform: translateY(-50%);
 	}
