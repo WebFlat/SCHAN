@@ -22,7 +22,7 @@
             <p class="tasks__loading-title current-task__arrival">Место загрузки:</p>
             <p class="tasks__loading-text">309290, обл. Белгородская, г. Шебекино, ряд. 3, гск. Район Глиняного карьера, д. 39</p>
             <p class="current-task__title">Расстояние (КМ)</p>
-            <input type="numbers" name="distance" class="current-task__inp current-task__distance" placeholder="0" disabled>
+            <input type="numbers" name="distance" class="current-task__inp current-task__distance" placeholder="0" disabled pattern="[0-9]*">
             <p class="current-task__title current-task__title--date">Время прибытия:</p>
             <div class="current-task__date-wrap">
                 <p class="current-task__inp current-task__date" id="time-arrivalOut"></p>
@@ -37,7 +37,7 @@
                 
             </div>
             <p class="current-task__title">Расстояние (КМ)</p>
-            <input type="number" name="distance" class="current-task__inp current-task__distance" placeholder="0">
+            <input type="number" name="distance" class="current-task__inp current-task__distance" placeholder="0" pattern="[0-9]*">
             <p class="current-task__title current-task__title--date">Время прибытия:</p>
             <div class="current-task__date-wrap">
                 <p class="current-task__inp current-task__date" id="time-unloadingOut"></p>

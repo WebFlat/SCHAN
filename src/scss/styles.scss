@@ -6,6 +6,16 @@
 
 * {
 	box-sizing: border-box;
+	outline: none;
+}
+button::-moz-focus-inner {
+	border: 0;
+}
+select.select {
+	-moz-appearance: none !important; 
+	// -webkit-appearance: none !important; 
+	appearance: none !important;
+	-webkit-appearance: none;
 }
 
 html {
@@ -481,6 +491,9 @@ body {
 		margin-bottom: 17px;
 		color: $default-color;
 		margin-top: 14px;
+		&::-webkit-inner-spin-button {
+			display: none;
+		}
 	}
 	&__icon {
 		width: 20px;
@@ -718,6 +731,9 @@ body {
 		&::placeholder {
 			color: $default-color;
 		}
+		&::-webkit-inner-spin-button {
+			display: none;
+		  }
 		&--hide {
 			opacity: 0;
 			top: -2px;
