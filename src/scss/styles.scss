@@ -245,11 +245,11 @@ body {
 	&__link {
 		width: 25px;
 		height: 10px;
-		background: url('../../img/arrow.svg') no-repeat;
+		background: url('../img/arrow.svg') no-repeat;
 		position: absolute;
 		right: 17px;
 		&--orange {
-			background: url('../../img/arrow-black.svg') no-repeat;
+			background: url('../img/arrow-black.svg') no-repeat;
 		}
 	}
 }
@@ -444,6 +444,9 @@ body {
 	&__link {
 		position: absolute;
 		right: 16px;
+		background: url('../img/arrow.svg');
+		width: 25px;
+		height: 11px;
 	}
 }
 
@@ -695,7 +698,7 @@ body {
 			width: 20px;
 			height: 20px;
 			position: absolute;
-			background: url(../../img/camera.svg) no-repeat;
+			background: url('../img/camera.svg') no-repeat;
 			right: 23px;
 			top: 50%;
 			transform: translateY(-50%);
@@ -712,12 +715,12 @@ body {
 		color: $text-gray;
 		&::after {
 			top: 36px;
-			background: url(../../img/distance.svg) no-repeat;
+			background: url('../img/distance.svg') no-repeat;
 			right: 0;
 		}
 		&--date {
 			&::after {
-				background: url(../../img/clock.svg) no-repeat;
+				background: url('../img/clock.svg') no-repeat;
 			}
 		}
 	}
@@ -758,7 +761,7 @@ body {
 			width: 20px;
 			height: 20px;
 			position: absolute;
-			background: url(../../img/sub_right.svg) no-repeat;
+			background: url('../img/sub_right.svg') no-repeat;
 			right: 0;
 			top: 10%;
 		}
@@ -766,7 +769,7 @@ body {
 	&__arrival {
 		position: relative;
 		&::before {
-			background: url(../../img/sub_left.svg) no-repeat;
+			background: url('../img/sub_left.svg') no-repeat;
 		}
 	}
 
